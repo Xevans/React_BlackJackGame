@@ -1,0 +1,19 @@
+10/17/2025
+- Start with building out a home component. I do not believe this project needs routes at this time.
+- Decide on some different utility functions that will be needed by the app to handle
+    - Card api calls.
+        - create deck
+        - draw from deck
+        - shuffle deck
+        
+    - what does the expected return data from the api look like?
+        - review docs and create appropriate types to store the expected payload data.
+    - what to do with cards after calls.
+    - managing players following card calls.
+
+- I think utility functions and game logic should have a seperation of code location
+- utils and context should talk to the game logic module that will contain the file(s) for game logic.
+- utils will hold logic for communicating with card api
+- One context will hold global state data for the card piles aka players and their bets/money
+    - another context will hold main deck state information
+
